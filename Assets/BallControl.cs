@@ -39,18 +39,7 @@ public class BallControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // TODO : HAPUS INI
-        // Ini main-main doang :v
-        // Nambahin speed setiap +- 2 detik
-        // addSpeedCounter += 1;
 
-        // if (addSpeedCounter > 120)
-        // {
-
-        //     rigidBody2D.velocity = (rigidBody2D.velocity.normalized * (rigidBody2D.velocity.magnitude + 1));
-
-        //     addSpeedCounter = 0;
-        // }
     }
 
     void ResetBall()
@@ -83,7 +72,6 @@ public class BallControl : MonoBehaviour
             // rigidBody2D.AddForce(new Vector2(xInitialForce, yRandomInitialForce));
             rigidBody2D.velocity = (new Vector2(xInitialForce, yRandomInitialForce).normalized * initialSpeed);
         }
-
     }
 
     void RestartGame()
@@ -105,15 +93,12 @@ public class BallControl : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        // if (other.gameObject.name.Contains("Player")) {
+        
         ballHitSound.Play();
-        // }
+        
+        // Keeps the ball speed constant... I apparently need to do this???
+        rigidBody2D.velocity = (new Vector2(rigidBody2D.velocity.x, rigidBody2D.velocity.y).normalized * initialSpeed);
     }
-
-    // private void OnTriggerEnter2D(Collider2D other)
-    // {
-    //     failSound.Play();
-    // }
 
     // Untuk mengakses informasi titik asal lintasan
     public Vector2 TrajectoryOrigin

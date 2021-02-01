@@ -55,7 +55,7 @@ public class ExpanderControl : MonoBehaviour
     {
         float yInitialForce = Random.Range(15, 50);
         float xInitialForce = Random.Range(15, 50);
-        int initialSpeed = Random.Range(5, 10);
+        int initialSpeed = Random.Range(8, 17);
 
         // Tentukan nilai komponen y dari gaya dorong antara -yInitialForce dan yInitialForce
         float yRandomInitialForce = Random.Range(-yInitialForce, yInitialForce);

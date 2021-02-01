@@ -721,6 +721,11 @@ PrefabInstance:
       propertyPath: expandedSize.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7154370215553591131, guid: f728be8ec0019214da38cd73b2e853ab,
+        type: 3}
+      propertyPath: speed
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 7154370215553591132, guid: f728be8ec0019214da38cd73b2e853ab,
         type: 3}
       propertyPath: m_Name
@@ -1224,8 +1229,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xInitialForce: 50
-  yInitialForce: 15
-  initialSpeed: 10
+  yInitialForce: 25
+  initialSpeed: 12
   startGameSound: {fileID: 1744782959}
   ballHitSound: {fileID: 66403959}
   failSound: {fileID: 1953674924}
@@ -2064,6 +2069,11 @@ PrefabInstance:
         type: 3}
       propertyPath: expandedSize.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154370215553591131, guid: f728be8ec0019214da38cd73b2e853ab,
+        type: 3}
+      propertyPath: speed
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7154370215553591132, guid: f728be8ec0019214da38cd73b2e853ab,
         type: 3}
